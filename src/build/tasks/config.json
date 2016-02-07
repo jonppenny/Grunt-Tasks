@@ -3,6 +3,6 @@
   "taskfiles": "tasks/**/*.js",
   "paths": {
     "src": "src/",
-    "deploy": "../deploy/wp-content/themes/teletubbies/"
+    "deploy": "path/to/deploy/"
   }
 }
