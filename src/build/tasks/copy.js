@@ -5,9 +5,17 @@ module.exports = function () {
         images_to_deploy: {
             files: [{
                 expand: true,
-                cwd: 'src/images',
+                cwd: '<%= config.paths.src %>images',
                 src: ['**'],
                 dest: '<%= config.paths.deploy %>images'
+            }]
+        },
+        fonts_to_deploy: {
+            files: [{
+                expand: true,
+                cwd: '<%= config.paths.src %>fonts',
+                src: ['**'],
+                dest: '<%= config.paths.deploy %>fonts'
             }]
         }
     }

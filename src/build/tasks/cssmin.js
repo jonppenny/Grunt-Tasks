@@ -6,9 +6,9 @@ module.exports = function () {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'release/css',
+                    cwd: '<%= config.paths.deploy %>css',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'release/css',
+                    dest: '<%= config.paths.deploy %>css',
                     ext: '.min.css'
                 }]
             }

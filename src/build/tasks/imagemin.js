@@ -3,11 +3,14 @@
 module.exports = function() {
     return {
         dist: {
+            options: {
+                optimizationLevel: 7
+            },
             files: [{
-                expand: true,                  // Enable dynamic expansion
-                cwd: 'src/',                   // Src matches are relative to this path
-                src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-                dest: 'dist/'                  // Destination path prefix
+                expand: true,
+                cwd: '<%= config.paths.src %>images',
+                src: ['**/*.{png,jpg,gif}'],
+                dest: '<%= config.paths.deploy %>images'
             }]
         }
     }

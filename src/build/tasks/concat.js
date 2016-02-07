@@ -2,12 +2,12 @@
 
 module.exports = function () {
     return {
-        teletubbies: {
-            options: {
-                separator: ';'
+        concat : {
+            options : {
+                separator : ';'
             },
-            src: [],
-            dest: '<%= config.paths.deploy %>js/site.js'
+            src : [],
+            dest : '<%= config.paths.deploy %>js/script.js'
         }
     }
 };
