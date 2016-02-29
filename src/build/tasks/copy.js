@@ -18,6 +18,5 @@ module.exports = function () {
                 dest: '<%= config.paths.deploy %>fonts'
             }]
         }
-    }
+    };
 };
-

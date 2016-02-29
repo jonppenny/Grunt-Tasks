@@ -1,6 +1,7 @@
-'use strict';
+'use-strict';
 
 module.exports = function () {
+
     return {
         dist: {
             options: {
@@ -13,5 +14,5 @@ module.exports = function () {
                 '<%= config.paths.deploy %>css/childs-area.css': '<%= config.paths.src %>scss/childs-area.scss'
             }
         }
-    }
+    };
 };

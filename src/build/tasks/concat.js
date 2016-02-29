@@ -1,4 +1,4 @@
-'use strict';
+'use-strict';
 
 module.exports = function () {
     return {
@@ -9,5 +9,5 @@ module.exports = function () {
             src : [],
             dest : '<%= config.paths.deploy %>js/script.js'
         }
-    }
+    };
 };

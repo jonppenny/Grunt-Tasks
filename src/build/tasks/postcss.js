@@ -1,6 +1,7 @@
-'use strict';
+'use-strict';
 
 module.exports = function () {
+
     return {
         options: {
             map: true,
@@ -13,5 +14,5 @@ module.exports = function () {
         dist: {
             src: '<%= config.paths.deploy %>css/custom.css'
         }
-    }
+    };
 };

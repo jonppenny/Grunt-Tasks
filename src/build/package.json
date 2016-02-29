@@ -1,8 +1,8 @@
 {
-  "name": "teletubbies",
+  "name": "PLEASE-CHANGE-THIS",
   "version": "0.1.0",
   "description": "",
-  "author": "Jon Penny, Rob Brigden",
+  "author": "Jon Penny",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.3",

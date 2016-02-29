@@ -1,5 +1,6 @@
+'use-strict';
+
 module.exports = function (grunt) {
-    'use strict';
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -27,7 +28,7 @@ module.exports = function (grunt) {
             options: { force: true },
             css: ["<%= config.paths.deploy %>css/*.*", "!<%= config.paths.deploy %>css/*.min.css"]
         },
-        
+
         copy: require('./tasks/copy')(grunt),
         imagemin: require('./tasks/imagemin')(grunt),
     });
@@ -57,7 +58,7 @@ module.exports = function (grunt) {
         'Copy all required files to deploy.',
         ['copyImages', 'copyFonts']
     );
-    
+
     grunt.registerTask(
         'buildCSS',
         'Build SASS and minify CSS.',
@@ -69,7 +70,7 @@ module.exports = function (grunt) {
         'Build a custom version of Modernizr.',
         ['modernizr']
     );
-    
+
     grunt.registerTask(
         'buildAll',
         'Build all and copy files to deploy folder.',
