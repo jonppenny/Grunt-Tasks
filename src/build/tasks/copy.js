@@ -1,7 +1,7 @@
-'use-strict';
+'use strict';
 
-module.exports = function () {
-    return {
+module.exports = function (grunt) {
+    grunt.config('copy', {
         images_to_deploy: {
             files: [{
                 expand: true,
@@ -17,6 +17,16 @@ module.exports = function () {
                 src: ['**'],
                 dest: '<%= config.paths.deploy %>fonts'
             }]
+        },
+        html_to_deploy: {
+            files: [{
+                expand: true,
+                cwd: '<%= config.paths.src %>',
+                src: ['**/*.html'],
+                dest: '<%= config.paths.deploy %>'
+            }]
         }
-    };
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-copy');
 };

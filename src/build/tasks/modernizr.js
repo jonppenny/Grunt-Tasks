@@ -1,7 +1,7 @@
-'use-strict';
+'use strict';
 
-module.exports = function () {
-    return {
+module.exports = function (grunt) {
+    grunt.config('modernizr', {
         dist: {
             "cache": false,
             "dest": "<%= config.paths.deploy %>libs/modernizr/modernizr.js",
@@ -19,5 +19,7 @@ module.exports = function () {
             ],
             "uglify": true
         }
-    };
+    });
+
+    grunt.loadNpmTasks("grunt-modernizr");
 };

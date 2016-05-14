@@ -1,9 +1,10 @@
-'use-strict';
+'usestrict';
 
-module.exports = function () {
-    return {
-        clean: {
-            css: ["<%= config.paths.deploy %>css/*.*", "!<%= config.paths.deploy %>css/*.min.css"]
-        }
-    };
+module.exports = function (grunt) {
+    grunt.config('clean', {
+        options: { force: true },
+        css: ["<%= config.paths.deploy %>css/*.*", "!<%= config.paths.deploy %>css/*.min.css"]
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-clean');
 };

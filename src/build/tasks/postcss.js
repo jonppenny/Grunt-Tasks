@@ -1,8 +1,7 @@
-'use-strict';
+'use strict';
 
-module.exports = function () {
-
-    return {
+module.exports = function (grunt) {
+    grunt.config('postcss', {
         options: {
             map: true,
             processors: [
@@ -14,5 +13,7 @@ module.exports = function () {
         dist: {
             src: '<%= config.paths.deploy %>css/custom.css'
         }
-    };
+    });
+
+    grunt.loadNpmTasks('grunt-postcss');
 };

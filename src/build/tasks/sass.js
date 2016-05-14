@@ -1,18 +1,18 @@
-'use-strict';
+'use strict';
 
-module.exports = function () {
-
-    return {
-        dist: {
-            options: {
-                style: 'expanded',
-                loadPath: ['node_modules/foundation-sites/scss'],
-                noCache: true
-            },
-            files: {
-                '<%= config.paths.deploy %>css/custom.css': '<%= config.paths.src %>scss/main.scss',
-                '<%= config.paths.deploy %>css/childs-area.css': '<%= config.paths.src %>scss/childs-area.scss'
+module.exports = function (grunt) {
+    grunt.config.merge({
+        sass: {
+            dist: {
+                options: {
+                    sourceMap: true,
+                    style: 'expanded',
+                    includePaths: require('node-bourbon').with('node_modules/foundation-sites/scss'),
+                    noCache: true
+                }
             }
         }
-    };
+    });
+
+    grunt.loadNpmTasks('grunt-sass');
 };

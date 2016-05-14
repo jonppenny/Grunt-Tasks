@@ -2,7 +2,7 @@
   "gruntfile": "Gruntfile.js",
   "taskfiles": "tasks/**/*.js",
   "paths": {
-    "src": "path/to/src",
-    "deploy": "../path/to/deploy"
+    "src": "src/",
+    "deploy": "../deploy/"
   }
 }

@@ -1,7 +1,7 @@
-'use-strict';
+'use strict';
 
-module.exports = function() {
-    return {
+module.exports = function (grunt) {
+    grunt.config('imagemin', {
         dist: {
             options: {
                 optimizationLevel: 7
@@ -13,5 +13,7 @@ module.exports = function() {
                 dest: '<%= config.paths.deploy %>images'
             }]
         }
-    };
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 };
