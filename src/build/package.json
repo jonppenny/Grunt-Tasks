@@ -1,8 +1,8 @@
 {
-  "name": "gojetters",
+  "name": "grunt-tasks",
   "version": "0.1.0",
   "description": "",
-  "author": "Rob Brigden",
+  "author": "Jon Penny",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "foundation-sites": "^6.1.1",

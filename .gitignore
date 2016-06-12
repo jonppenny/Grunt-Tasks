@@ -48,3 +48,7 @@ Temporary Items
 
 *.iml
 *.idea
+/src/build/node_modules/
+*.sublime-project
+*.sublime-workspace
+/src/build/.sublime-grunt.cache
